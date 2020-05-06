@@ -202,10 +202,12 @@ for i in alphabet {
     if i == oneSimbool {
         print("В английском алфавите под номером \(indexChar) - буква \(i)")
     }
-}
+} */
 
 
-for character in "Privetik!@#$" {
+ // Practice from book # 1
+
+ for character in "Privetik!@#$" {
     print (character)
 }
 
@@ -225,7 +227,6 @@ sum.append(symbol)
 let message = "\(city) имеет свойство \(quality)"
 
 print ("Выражение имеет \(message.count) символа")
-
 
 
 var london = "London is the capital of GB"
@@ -248,25 +249,41 @@ let indexLondon = london.index(london.startIndex, offsetBy: 4)..<london.endIndex
 london.removeSubrange(indexLondon)
 
 
-let daysOfMonth = [31, 28, 31, 31, 30, 31, 30, 30, 31, 31, 30, 31]
-for index in daysOfMonth {  //1
-    print (index)
+// Practice for book #2
+
+var str1 = "hello"
+let str2 = " world"
+
+var summ = "\(str1) \" \(str2)"
+
+if str1.isEmpty {
+    print ("String is empty")
+} else {
+    print ("String is not empty")
 }
 
-var nameMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"]
-for (index,value) in nameMonths.enumerated() {
-    print ("In \(value) \(daysOfMonth[index]) days")  //2
-}*/
+    
 
+if str1.count == 0 {
+    print("String is not empty")
+}
 
+for character in summ {
+    print(character)
+}
 
+let a = "!"
+summ.append(a)
+print (summ)
 
+let index = str1.index(str1.startIndex, offsetBy: 2)
+str1.insert("a", at: index)
+print (str1)
 
-
-
-
-
-
+//let newIndex = str1.firstIndex(of: "e")!
+let newIndex = str1.index(after: str1.startIndex)
+str1.remove(at: newIndex)
+print (str1)
 
 
 

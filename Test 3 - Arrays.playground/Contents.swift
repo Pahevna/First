@@ -26,19 +26,53 @@ for (index,value) in nameMonths.enumerated() {
     print ("\rIn \(value) \(daysOfMonth[index]) days")
 }
 
+let daysAndName = [("January", 31), ("February", 28), ("March", 31), ("April", 31), ("May", 30), ("June", 30), ("July", 30), ("August", 31), ("September", 30), ("October", 31), ("November",30), ("December",31)]
+for (index, value) in daysAndName {
+    print ("\r In \(index) \(value) days")
+}
+
+for (index, value) in daysAndName.reversed() {
+print ("\r In \(index) \(value) days")
+}
+
+let randomDate = (months: "March", day: 2)
+var result = 0
+for (name, days) in daysAndName {
+    if name != randomDate.months {
+        result += days
+    } else {
+        result += randomDate.day
+    break
+    }
+}
+    print ("\(result)")
 
 
 
 
-
-
-
-
-
-
-
-
-
+// swiftBook
+//var myNumber = [1, 3, 5, 7, 10]
+//
+//if myNumber.isEmpty {
+//print ("вывы")
+//} else {
+//    print ("Tttt")
+//}
+//
+//myNumber.append(100)
+//myNumber += [1, 100, 5]
+//
+//var fistNumber = myNumber[0]
+//myNumber.insert(999, at: 3)
+//
+//for (index, number) in myNumber.enumerated() {
+//    print ("number \(index+1) : \(number)")
+//}
+//let num = 20
+//for index in 1..<num {
+//    print ("\(index) умножить на 5 будет \(index * 5)")
+//}
+//
 
 
 

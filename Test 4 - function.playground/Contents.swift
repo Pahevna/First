@@ -12,7 +12,7 @@ func greetAgain(person: String) -> String {
 print(greetAgain(person: "Anna"))
 
 
-func greet(person: String, alreadyGreeted: Bool) -> String {
+func greet(person: String, alreadyGreeted: Bool) -> String {   //функция с несколькими входными параметрами
     if alreadyGreeted == true {
         return greetAgain(person: person)
     } else {
@@ -28,14 +28,14 @@ func printAndCount (word: String) -> Int{
     return word.count
 }
 
-func printWithoutCount (word: String){
+func printWithoutCount (word: String){     //Функция, не возвращающая значений
     let _ = printAndCount(word: word)
 }
 printAndCount(word: "Good Morning!")
 printWithoutCount(word: "Good Morning!")
 
 //3
-func minAndMax (number array: [Int]) -> (min: Int, max: Int) {
+func minAndMax (number array: [Int]) -> (min: Int, max: Int) {  //Функция, возвращающая несколько значений
     var currentMin = array[0]
     var currentMax = array[0]
     for value in array[1..<array.count] {
@@ -53,7 +53,7 @@ print ("min is \(calculate.min) and max is \(calculate.max)")
 
 
 //4
-func arithmeticMean (_ numberNew: Double...) -> Double {
+func arithmeticMean (_ numberNew: Double...) -> Double {  //вариативный параметр
     var total : Double = 0
     for number in numberNew {
         total += number
@@ -61,7 +61,7 @@ func arithmeticMean (_ numberNew: Double...) -> Double {
     return total / Double(numberNew.count)
 }
 
-arithmeticMean (1,5,133,89,6)
+arithmeticMean (1,2)
 
 //5 Сквозные параметры
 func swapTwoInts (_ a: inout Int, _ b: inout Int) {
@@ -121,7 +121,7 @@ func chooseStepFunction (_ backward: Bool) -> (Int) -> Int {
     return backward ? stepBackward : stepForward
 }
 var currentValue = -3
-let moveNearerToZero = chooseStepFunction(currentValue > 0) //указатель на возвращаемую функцию 
+let moveNearerToZero = chooseStepFunction(currentValue > 0) //указатель на возвращаемую функцию
 
 print ("Counting to zero:")
 while currentValue != 0 {

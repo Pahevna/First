@@ -15,23 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkX-ZU-VYB">
-                                <rect key="frame" x="123" y="544" width="168" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkX-ZU-VYB">
+                                <rect key="frame" x="148" y="650" width="168" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="e9q-cs-eFw"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpH-YC-u3C"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99G-IK-DJT">
-                                <rect key="frame" x="98" y="132" width="218" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99G-IK-DJT">
+                                <rect key="frame" x="274" y="106" width="42" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="yh4-Dt-cbu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kkX-ZU-VYB" secondAttribute="trailing" constant="98" id="GrI-tK-LwN"/>
+                            <constraint firstItem="99G-IK-DJT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="NlT-Ju-mko"/>
+                            <constraint firstItem="kkX-ZU-VYB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="YO9-E9-XuD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kkX-ZU-VYB" secondAttribute="bottom" constant="134" id="ayT-6b-Cqg"/>
+                            <constraint firstItem="kkX-ZU-VYB" firstAttribute="trailing" secondItem="99G-IK-DJT" secondAttribute="trailing" id="klz-vh-ESb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
